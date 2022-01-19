@@ -9,6 +9,6 @@ import * as AOS from 'aos';
 export class AppComponent {
   title = 'portfolio';
   ngOnInit() {
-    AOS.init();
+    AOS.init({ startEvent: 'load' });
   }
 }
