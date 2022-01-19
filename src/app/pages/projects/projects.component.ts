@@ -80,7 +80,7 @@ export class ProjectsComponent implements OnInit {
       '../../../assets/projects/icons/carena.svg',
       true,
       'https://github.com/duboisfacu/asistencias',
-      '../../../assets/downloads/SISAS Carena.rar',
+      'https://dl.dropboxusercontent.com/s/zcp10lv0srx68m2/SISAS%20Carena.rar?dl=0',
       [
         'Sistema de asistencias desarrollado como tesis para la tecnicatura Superior en desarrollo de Software.',
       ],
@@ -102,7 +102,8 @@ export class ProjectsComponent implements OnInit {
       '../../../assets/projects/icons/cyc.svg',
       true,
       'https://github.com/duboisfacu/cuadradito-y-circulito',
-      '../../../assets/downloads/CuadraditoyCirculito.exe',
+      'https://dl.dropboxusercontent.com/s/92fvkfjz8tbfg40/CuadraditoyCirculito.exe?dl=0',
+
       [
         'Juego desarrollado en game Maker Studio 2 y codificado con en GML. Creado a partir de la serie de Cuadradito y Circulito.',
       ],
