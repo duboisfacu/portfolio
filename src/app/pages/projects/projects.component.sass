@@ -63,3 +63,23 @@ h2
 .panel-mid
     // min-height: 100vh
     padding-bottom: 200px
+
+.invisible
+    background-color: red
+    // height: 1px
+@media (max-width: 991px)
+    @media (min-width: 940px)
+        .invisible
+            display: none
+@media (max-width: 766px)
+    .invisible
+        display: none
+
+.fades
+    animation: appear 1.5s
+@keyframes appear
+    0%
+        opacity: 0
+
+    50%
+        opacity: 1
