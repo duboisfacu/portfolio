@@ -1,0 +1,76 @@
+<div class="text-center panel" id="contact">
+  <h2 data-aos="zoom-in" data-aos-delay="100">CONTACTAME</h2>
+  <div class="content shadow">
+    <div>
+      <form
+        class="note"
+        *ngIf="sentMail === 0"
+        [formGroup]="msg"
+        (ngSubmit)="onSubmit($event)"
+      >
+        <div class="row">
+          <input
+            name="from_name"
+            id="from_name"
+            formControlName="from_name"
+            class="col name"
+            type="text"
+            placeholder="nombre"
+          />
+          <input
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            name="from_email"
+            id="from_email"
+            formControlName="from_email"
+            class="col email"
+            required="true"
+            type="email"
+            placeholder="email"
+          />
+        </div>
+        <div class="row">
+          <input
+            name="message"
+            id="message"
+            formControlName="message"
+            class="text"
+            type="text"
+            placeholder="mensaje"
+          />
+        </div>
+        <button [disabled]="!msg.valid" class="send" type="submit">
+          ENVIAR
+        </button>
+      </form>
+    </div>
+    <div class="sent note" *ngIf="sentMail === 1">
+      <h3>¡Mensaje enviado correctamente!</h3>
+      <h4>Muchas gracias, en breves lo voy a estar leyendo ♥</h4>
+      <button class="send" (click)="changeSent()">ENVIAR OTRO</button>
+    </div>
+    <div class="sent note" *ngIf="sentMail === 2">
+      <h3>¡UPS!</h3>
+      <h4>
+        Ourrió un error al intentar enviar el mensaje, intenta nuevamente.
+      </h4>
+      <br />
+      <p>Si el error persiste, contactame por mis redes:</p>
+      <a href="https://www.linkedin.com/in/duboisfacu/" target="_blank">
+        <img class="media" src="../../../assets/footer/linkedin.svg" />
+      </a>
+      <a
+        href="mailto:facundubois@gmail.com?Subject=CONTACTO%20POR%20PORTFOLIO"
+        target="_blank"
+      >
+        <img class="media" src="../../../assets/footer/email.svg" />
+      </a>
+      <br />
+      <button class="send" (click)="changeSent()">VOLVER A INTENTAR</button>
+    </div>
+  </div>
+  <div class="relative">
+    <a class="bounce" href="#footer"
+      ><img class="arrow" src="../../../assets/arrow.svg"
+    /></a>
+  </div>
+</div>
