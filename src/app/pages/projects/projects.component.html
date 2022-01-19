@@ -35,6 +35,8 @@
         </div>
       </div>
       <a
+        data-aos="fade-up"
+        data-aos-delay="100"
         class="more"
         href="#projects-2"
         *ngIf="more === 0"
@@ -79,7 +81,13 @@
             </div>
           </div>
 
-          <a class="more" href="#projects" (click)="operation(0)">ver menos</a>
+          <a
+            data-aos="fade-down"
+            class="more"
+            href="#projects"
+            (click)="operation(0)"
+            >ver menos</a
+          >
           <div *ngIf="more === 1" class="relative">
             <a (click)="operation(0)" class="bounce" href="#contact"
               ><img class="arrow" src="../../../assets/arrow.svg"
