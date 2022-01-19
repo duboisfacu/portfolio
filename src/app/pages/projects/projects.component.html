@@ -3,7 +3,8 @@
   <br />
   <div class="container">
     <div class="row">
-      <div *ngFor="let card of projects; let i = index" class="col">
+      <div *ngFor="let card of projects[0]; let i = index" class="col">
+        <div *ngIf="i == 3" id="projects-2"></div>
         <div data-aos="fade-up" data-aos-delay="100" class="sis shadow">
           <h3 class="title">
             {{ card[0] }}
@@ -33,11 +34,64 @@
           </div>
         </div>
       </div>
+      <a
+        class="more"
+        href="#projects-2"
+        *ngIf="more === 0"
+        (click)="operation(1)"
+        >ver más</a
+      >
+      <div class="panel-mid" *ngIf="more === 1">
+        <div class="row">
+          <div *ngFor="let card of projects[1]; let i = index" class="col">
+            <div
+              *ngIf="!card[7]"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="sis shadow"
+            >
+              <h3 class="title">
+                {{ card[0] }}
+              </h3>
+              <div class="img-cont">
+                <img class="img" src="{{ card[1] }}" />
+              </div>
+              <div class="buttons">
+                <a
+                  [swal]="{
+                    title: card[0].toString(),
+                    html: run(card),
+
+                    confirmButtonText: 'Cerrar'
+                  }"
+                  (click)="run(card)"
+                  *ngIf="card[2]"
+                >
+                  <img src="../../../assets/projects/buttons/info.svg" />
+                </a>
+                <a *ngIf="card[3]" href="{{ card[3] }}" target="_blank">
+                  <img src="../../../assets/projects/buttons/github.svg" />
+                </a>
+                <a *ngIf="card[4]" href="{{ card[4] }}" target="_blank">
+                  <img src="../../../assets/projects/buttons/demo.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a class="more" href="#projects" (click)="operation(0)">ver menos</a>
+          <div *ngIf="more === 1" class="relative">
+            <a (click)="operation(0)" class="bounce" href="#contact"
+              ><img class="arrow" src="../../../assets/arrow.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="relative">
-    <a class="bounce" href="#contact"
-      ><img class="arrow" src="../../../assets/arrow.svg"
-    /></a>
+    <div *ngIf="more === 0" class="relative">
+      <a class="bounce" href="#contact"
+        ><img class="arrow" src="../../../assets/arrow.svg"
+      /></a>
+    </div>
   </div>
 </div>

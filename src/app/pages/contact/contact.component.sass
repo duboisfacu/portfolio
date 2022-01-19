@@ -12,9 +12,6 @@ h2
 .panel
     height: 100vh
 
-@media (max-width: 576px)
-    h2
-        padding-top: 80px
 .content
     background-color: #FFFFFF
     padding: 40px 40px 30px
@@ -54,6 +51,7 @@ input::placeholder
     border: none
     height: 40px
     width: 30%
+
     margin-top: 20px
     border-radius: 40px
     &:hover
@@ -88,3 +86,10 @@ input::placeholder
         transform: scale(1.1)
         color: #303030 !important
         cursor: pointer
+@media (max-width: 576px)
+    .row
+        display: table-row
+    h2
+        padding-top: 80px
+    .send
+        width: 80%
