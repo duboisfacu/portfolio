@@ -9,6 +9,8 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+import { ArrowComponent } from './components/arrow/arrow.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
+    ArrowComponent,
   ],
   imports: [
     CommonModule,

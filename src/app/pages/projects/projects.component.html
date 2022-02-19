@@ -4,7 +4,6 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let card of projects[0]; let i = index" class="col">
-        <div *ngIf="i == 3" id="projects-2"></div>
         <div data-aos="fade-up" data-aos-delay="100" class="sis shadow">
           <h3 class="title">
             {{ card[0] }}
@@ -36,12 +35,8 @@
       </div>
     </div>
 
-    <a
-      class="more fades"
-      href="#projects-2"
-      *ngIf="more === 0"
-      (click)="operation(1)"
-      >ver más</a
+    <a class="more fades" *ngIf="more === 0" (click)="operation(1)"
+      >ver más proyectos</a
     >
     <div class="panel-mid" *ngIf="more === 1">
       <div class="row">
@@ -78,24 +73,11 @@
           </div>
         </ng-container>
 
-        <a
-          data-aos="fade-down"
-          class="more"
-          href="#projects"
-          (click)="operation(0)"
-          >ver menos</a
+        <a data-aos="fade-down" class="more" (click)="operation(0)"
+          >ver menos proyectos</a
         >
-        <div *ngIf="more === 1" class="relative">
-          <a (click)="operation(0)" class="bounce" href="#contact"
-            ><img class="arrow" src="../../../assets/arrow.svg"
-          /></a>
-        </div>
       </div>
     </div>
-    <div *ngIf="more === 0" class="relative">
-      <a class="bounce" href="#contact"
-        ><img class="arrow" src="../../../assets/arrow.svg"
-      /></a>
-    </div>
+    <app-arrow [href]="'contact'"></app-arrow>
   </div>
 </div>
