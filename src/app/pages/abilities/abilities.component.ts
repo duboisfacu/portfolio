@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { svgService } from '../../svg.service';
 
 @Component({
   selector: 'app-abilities',
@@ -33,7 +34,9 @@ export class AbilitiesComponent implements OnInit {
     nav: false,
   };
 
-  constructor() {}
+  constructor(private svgService: svgService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.svgService.init();
+  }
 }

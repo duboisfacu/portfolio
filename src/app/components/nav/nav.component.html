@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark fixed">
+<nav class="navbar navbar-expand-sm fixed">
   <div class="container-fluid">
     <button
       class="navbar-toggler"
@@ -18,9 +18,12 @@
             (click)="closeNav('home')"
             [attr.data-bs-toggle]="closed ? 'collapse' : ''"
             data-bs-target="#navbarTogglerDemo03"
-            class="nav-link mobile"
+            class="nav-link mobile icon"
           >
-            <img class="img" src="../../../assets/mapache.svg" />
+            <mat-icon
+              class="img color--secondary"
+              [svgIcon]="'mapache'"
+            ></mat-icon>
           </a>
           <a
             (click)="closeNav('about')"
@@ -42,7 +45,10 @@
             data-bs-target="#navbarTogglerDemo03"
             class="nav-link desktop"
           >
-            <img class="img" src="../../../assets/mapache.svg" />
+            <mat-icon
+              class="img color--secondary"
+              [svgIcon]="'mapache'"
+            ></mat-icon>
           </a>
           <a
             (click)="closeNav('projects')"

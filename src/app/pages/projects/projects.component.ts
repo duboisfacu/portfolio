@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { NgDialogAnimationService } from 'ng-dialog-animation';
+import { ModalComponent } from './components/modal/modal.component';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -6,6 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   more: number = 0;
+  constructor(public dialog: NgDialogAnimationService) {}
+
+  openDialog(card: any) {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      panelClass: ['animate__animated', 'animate__bounceIn'],
+      data: card,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
   operation(value: number) {
     this.more = value;
   }
@@ -15,57 +32,27 @@ export class ProjectsComponent implements OnInit {
       this.juan =
         '<p class="description">' + card[5] + '</p><br><p>Desarrollado en:</p>';
       for (let i of card[6]) {
-        this.juan =
-          this.juan +
-          '<a class="fua" target="_blank" href=" ' +
-          i[1] +
-          '"> <img class="language-icon" src="' +
-          i[0] +
-          '"/></a>';
+        this.juan = `${this.juan}<a class="fua" target="_blank" href="${i[1]}"><mat-icon class="language-icon color--primary" [svgIcon]="${i[0]}"/></mat-icon></a>`;
       }
     }
     return this.juan;
   }
-
   juan?: string;
+
   languages: any = {
-    angular: [
-      '../../../assets/projects/languages/angular.svg',
-      'https://angular.io/',
-    ],
-    bootstrap: [
-      '../../../assets/projects/languages/bootstrap.svg',
-      'https://getbootstrap.com/',
-    ],
-    css: [
-      '../../../assets/projects/languages/css.svg',
-      'https://www.w3schools.com/css/',
-    ],
-    html: ['../../../assets/projects/languages/html.svg', 'https://html.com/'],
-    js: [
-      '../../../assets/projects/languages/js.svg',
-      'https://www.javascript.com/',
-    ],
-    react: [
-      '../../../assets/projects/languages/react.svg',
-      'https://es.reactjs.org/',
-    ],
-    sass: [
-      '../../../assets/projects/languages/sass.svg',
-      'https://sass-lang.com/',
-    ],
+    angular: ['angular', 'https://angular.io/'],
+    bootstrap: ['bootstrap', 'https://getbootstrap.com/'],
+    css: ['css', 'https://www.w3schools.com/css/'],
+    html: ['html', 'https://html.com/'],
+    js: ['js', 'https://www.javascript.com/'],
+    react: ['react', 'https://es.reactjs.org/'],
+    sass: ['sass', 'https://sass-lang.com/'],
     vb: [
-      '../../../assets/projects/languages/vb.svg',
+      'vb',
       'https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100)',
     ],
-    node: [
-      '../../../assets/projects/languages/node.svg',
-      'https://nodejs.org/es/',
-    ],
-    gms: [
-      '../../../assets/projects/languages/gms.svg',
-      'https://www.yoyogames.com/es/gamemaker',
-    ],
+    node: ['node', 'https://nodejs.org/es/'],
+    gms: ['gms', 'https://www.yoyogames.com/es/gamemaker'],
   };
   projects: Array<Array<Array<any>>> = [
     [
@@ -87,7 +74,7 @@ export class ProjectsComponent implements OnInit {
         'https://github.com/duboisfacu/hotu-alkemy',
         'https://duboisfacu.github.io/hotu/#/login',
         [
-          'Challenge para la empresa Alkemy.<br>Forma tu equipo de superheroes soñado.',
+          'Forma tu equipo de superheroes soñado. (Challenge para la empresa Alkemy)',
         ],
         [this.languages.bootstrap, this.languages.react, this.languages.sass],
       ],
@@ -163,7 +150,6 @@ export class ProjectsComponent implements OnInit {
       ['', '', false, false, false, false, false, true],
     ],
   ];
-  constructor() {}
 
   ngOnInit(): void {}
 }

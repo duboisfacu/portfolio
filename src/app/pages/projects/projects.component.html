@@ -8,30 +8,15 @@
         <div data-aos="fade-up" data-aos-delay="100" class="sis shadow">
           <h3 class="title">
             {{ card[0] }}
-            <!-- <mat-icon>account_balance</mat-icon> -->
           </h3>
           <div class="img-cont">
             <mat-icon
-              class="img color--primary"
+              class="logo color--primary"
               svgIcon="{{ card[1] }}"
             ></mat-icon>
-            <!-- <img
-              class="img color--primary"
-              fill="#FFFFFF"
-              src="{{ card[1] }}"
-            /> -->
           </div>
           <div class="buttons">
-            <a
-              [swal]="{
-                title: card[0].toString(),
-                html: run(card),
-
-                confirmButtonText: 'Cerrar'
-              }"
-              (click)="run(card)"
-              *ngIf="card[2]"
-            >
+            <a mat-button (click)="openDialog(card)">
               <mat-icon class="img color--primary" svgIcon="info"></mat-icon>
             </a>
             <a *ngIf="card[3]" href="{{ card[3] }}" target="_blank">
@@ -45,7 +30,11 @@
       </div>
     </div>
 
-    <a class="more fades" *ngIf="more === 0" (click)="operation(1)"
+    <a
+      data-aos="fade-down"
+      class="more fades"
+      *ngIf="more === 0"
+      (click)="operation(1)"
       >ver más proyectos</a
     >
     <div class="panel-mid" *ngIf="more === 1">
@@ -58,7 +47,7 @@
               </h3>
               <div class="img-cont">
                 <mat-icon
-                  class="img color--primary"
+                  class="logo color--primary"
                   svgIcon="{{ card[1] }}"
                 ></mat-icon>
               </div>

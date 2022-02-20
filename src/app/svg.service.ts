@@ -102,5 +102,74 @@ export class svgService {
         '../assets/footer/linkedin.svg'
       )
     );
+    // LAN
+    this.matIconRegistry.addSvgIcon(
+      'angular',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/angular.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'bootstrap',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/bootstrap.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'css',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/css.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'gms',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/gms.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'html',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/html.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'js',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/js.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'node',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/node.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'react',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/react.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'sass',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/sass.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'vb',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        '../assets/projects/languages/vb.svg'
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
+      'arrow',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/arrow.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      'mapache',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/mapache.svg')
+    );
   }
 }

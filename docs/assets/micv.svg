@@ -3,9 +3,9 @@
     <g id="linkedin" transform="translate(830.466 5484.217)">
       <path id="Sustracción_13" data-name="Sustracción 13" d="M-907.215-5852.755a5.534,5.534,0,0,1,5.6-5.462h64.568a5.533,5.533,0,0,1,5.6,5.462v65.325a5.532,5.532,0,0,1-5.6,5.461h-64.568a5.532,5.532,0,0,1-5.6-5.46v-65.327Z" transform="translate(1121.097 5860)" />
     </g>
-    <text id="CV" transform="translate(1055.233 5550)" fill="#fff" font-size="36" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="0" y="0">CV</tspan></text>
-    <text id="MI_" data-name="MI " transform="translate(1055.233 5519)" fill="#fff" font-size="23" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="0" y="0">MI </tspan></text>
-    <rect id="Rectángulo_25" data-name="Rectángulo 25" width="10" height="14" transform="translate(1094.233 5498)" fill="#fff"/>
-    <path id="Polígono_6" data-name="Polígono 6" d="M11.5,0,23,15H0Z" transform="translate(1110.233 5522) rotate(180)" fill="#fff"/>
+    <text id="CV" transform="translate(1055.233 5550)"  font-size="36" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="0" y="0">CV</tspan></text>
+    <text id="MI_" data-name="MI " transform="translate(1055.233 5519)"  font-size="23" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="0" y="0">MI </tspan></text>
+    <rect id="Rectángulo_25" data-name="Rectángulo 25" width="10" height="14" transform="translate(1094.233 5498)" />
+    <path id="Polígono_6" data-name="Polígono 6" d="M11.5,0,23,15H0Z" transform="translate(1110.233 5522) rotate(180)" />
   </g>
 </svg>

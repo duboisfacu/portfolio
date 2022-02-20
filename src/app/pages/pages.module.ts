@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ArrowComponent } from './components/arrow/arrow.component';
 import { MaterialModule } from '../material/material.module';
+import { ModalComponent } from './projects/components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MaterialModule } from '../material/material.module';
     ContactComponent,
     FooterComponent,
     ArrowComponent,
+    ModalComponent,
   ],
   imports: [
     CommonModule,
