@@ -71,7 +71,7 @@ export class ProjectsComponent implements OnInit {
     [
       [
         'FLAPTUNE',
-        '../../../assets/projects/icons/flaptune.svg',
+        'flaptune',
         true,
         false,
         'https://duboisfacu.github.io/flaptune/',
@@ -82,7 +82,7 @@ export class ProjectsComponent implements OnInit {
       ],
       [
         'HEROES OF THE UNIVERSE',
-        '../../../assets/projects/icons/hotu.svg',
+        'hotu',
         true,
         'https://github.com/duboisfacu/hotu-alkemy',
         'https://duboisfacu.github.io/hotu/#/login',
@@ -93,7 +93,7 @@ export class ProjectsComponent implements OnInit {
       ],
       [
         'PORTAFOLIO',
-        '../../../assets/projects/icons/portfolio.svg',
+        'portfolio',
         true,
         'https://github.com/duboisfacu/portfolio',
         'https://duboisfacu.github.io/portfolio/',
@@ -102,7 +102,7 @@ export class ProjectsComponent implements OnInit {
       ],
       [
         'TODO IT',
-        '../../../assets/projects/icons/todoit.svg',
+        'todoit',
         true,
         'https://github.com/duboisfacu/duboisfacu/blob/main/HACER.md#repositorios',
         'https://dms.licdn.com/playlist/C4D05AQFZBSYzbmcgfw/mp4-720p-30fp-crf28/0/1640153230913?e=1642680000&v=beta&t=1VdULb1D1Mb89P0sdAAXCjOan2Sqfsj8uMtykfGn6zQ',
@@ -114,7 +114,7 @@ export class ProjectsComponent implements OnInit {
       ],
       [
         'CHESTERBOT',
-        '../../../assets/projects/icons/chesterbot.svg',
+        'chesterbot',
         true,
         'https://github.com/duboisfacu/chester-bot',
         'https://discord.com/oauth2/authorize?client_id=784925087530614815&permissions=8&scope=bot',
@@ -125,7 +125,7 @@ export class ProjectsComponent implements OnInit {
       ],
       [
         'SISAS CARENA',
-        '../../../assets/projects/icons/carena.svg',
+        'sisas',
         true,
         'https://github.com/duboisfacu/asistencias',
         'https://dl.dropboxusercontent.com/s/zcp10lv0srx68m2/SISAS%20Carena.rar?dl=0',
@@ -138,7 +138,7 @@ export class ProjectsComponent implements OnInit {
     [
       [
         'CUADRADITO Y CIRCULITO',
-        '../../../assets/projects/icons/cyc.svg',
+        'cyc',
         true,
         'https://github.com/duboisfacu/cuadradito-y-circulito',
         'https://dl.dropboxusercontent.com/s/92fvkfjz8tbfg40/CuadraditoyCirculito.exe?dl=0',
@@ -151,7 +151,7 @@ export class ProjectsComponent implements OnInit {
 
       [
         'EL TACU',
-        '../../../assets/projects/icons/tacu.svg',
+        'eltacu',
         true,
         false,
         false,

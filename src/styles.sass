@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,900&display=swap')
 
 $primary: #c6538c
+$primaryTranslucent: #c6538ce0
+$secondary: #555555
+$secondaryTranslucent: #555555DA
+
+.color
+  &--primary
+    fill: $primary
+    color: $primary
+
+  &--secondary
+    fill: $secondary
+    color: $secondary
 
 html, body
   margin: 0
   padding: 0
-  background-color: #999FFF
+  background-color: $primary
   font-family: 'Poppins', sans-serif
-  color: #FFFFFF
+  color: $secondary
 
 .language-icon
   position: relative
@@ -19,7 +31,7 @@ html, body
 .fua
   text-decoration: none
 .swal2-container.swal2-center>.swal2-popup
-  color: #999FFF
+  color: $primary
   padding: 0
   width: 90vw
   max-width: 500px
@@ -31,7 +43,7 @@ html, body
   font-style: italic
 
 .swal2-styled.swal2-confirm
-  background-color: #999FFF!important
+  background-color: $primary!important
   margin-bottom: 20px
 
 @media (max-width: 576px)

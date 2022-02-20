@@ -1,5 +1,6 @@
 <div class="text-center panel" id="projects">
   <h2 data-aos="zoom-in" data-aos-delay="100">PROYECTOS</h2>
+
   <br />
   <div class="container">
     <div class="row">
@@ -7,9 +8,18 @@
         <div data-aos="fade-up" data-aos-delay="100" class="sis shadow">
           <h3 class="title">
             {{ card[0] }}
+            <!-- <mat-icon>account_balance</mat-icon> -->
           </h3>
           <div class="img-cont">
-            <img class="img" src="{{ card[1] }}" />
+            <mat-icon
+              class="img color--primary"
+              svgIcon="{{ card[1] }}"
+            ></mat-icon>
+            <!-- <img
+              class="img color--primary"
+              fill="#FFFFFF"
+              src="{{ card[1] }}"
+            /> -->
           </div>
           <div class="buttons">
             <a
@@ -22,13 +32,13 @@
               (click)="run(card)"
               *ngIf="card[2]"
             >
-              <img src="../../../assets/projects/buttons/info.svg" />
+              <mat-icon class="img color--primary" svgIcon="info"></mat-icon>
             </a>
             <a *ngIf="card[3]" href="{{ card[3] }}" target="_blank">
-              <img src="../../../assets/projects/buttons/github.svg" />
+              <mat-icon class="img color--primary" svgIcon="github"></mat-icon>
             </a>
             <a *ngIf="card[4]" href="{{ card[4] }}" target="_blank">
-              <img src="../../../assets/projects/buttons/demo.svg" />
+              <mat-icon class="img color--primary" svgIcon="demo"></mat-icon>
             </a>
           </div>
         </div>
@@ -47,7 +57,10 @@
                 {{ card[0] }}
               </h3>
               <div class="img-cont">
-                <img class="img" src="{{ card[1] }}" />
+                <mat-icon
+                  class="img color--primary"
+                  svgIcon="{{ card[1] }}"
+                ></mat-icon>
               </div>
               <div class="buttons">
                 <a
@@ -60,13 +73,22 @@
                   (click)="run(card)"
                   *ngIf="card[2]"
                 >
-                  <img src="../../../assets/projects/buttons/info.svg" />
+                  <mat-icon
+                    class="img color--primary"
+                    svgIcon="info"
+                  ></mat-icon>
                 </a>
                 <a *ngIf="card[3]" href="{{ card[3] }}" target="_blank">
-                  <img src="../../../assets/projects/buttons/github.svg" />
+                  <mat-icon
+                    class="img color--primary"
+                    svgIcon="github"
+                  ></mat-icon>
                 </a>
                 <a *ngIf="card[4]" href="{{ card[4] }}" target="_blank">
-                  <img src="../../../assets/projects/buttons/demo.svg" />
+                  <mat-icon
+                    class="img color--primary"
+                    svgIcon="info"
+                  ></mat-icon>
                 </a>
               </div>
             </div>
