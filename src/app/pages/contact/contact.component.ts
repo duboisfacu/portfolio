@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { environment } from 'src/app/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -9,6 +10,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactComponent implements OnInit {
   constructor() {}
+  assets = environment.assets;
   sentMail: number = 0;
   serviceID = 'default_service';
   templateID = 'template_97gtroo';

@@ -83,11 +83,15 @@ input::placeholder
 .media
     margin: 10px
     width: 45px
+    color: $primary
+    fill: $primary
     transition: transform .2s
+    transform: scale(2)
     &:hover
-        transform: scale(1.1)
-        color: #303030 !important
+        transform: scale(2.4)
+        color: $primaryHover
         cursor: pointer
+
 @media (max-width: 576px)
     .row
         display: table-row

@@ -56,13 +56,16 @@
       <br />
       <p>Si el error persiste, contactame por mis redes:</p>
       <a href="https://www.linkedin.com/in/duboisfacu/" target="_blank">
-        <img class="media" src="../../../assets/footer/linkedin.svg" />
+        <mat-icon
+          class="media color--primary"
+          [svgIcon]="'linkedin'"
+        ></mat-icon>
       </a>
       <a
         href="mailto:facundubois@gmail.com?Subject=CONTACTO%20POR%20PORTFOLIO"
         target="_blank"
       >
-        <img class="media" src="../../../assets/footer/email.svg" />
+        <mat-icon class="media color--primary" [svgIcon]="'mail'"></mat-icon>
       </a>
       <br />
       <button class="send" (click)="changeSent()">REINTENTAR</button>
