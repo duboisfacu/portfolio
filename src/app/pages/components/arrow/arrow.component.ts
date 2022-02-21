@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ArrowComponent implements OnInit {
   @Input() href?: string;
   constructor() {}
-
+  closeNav(a: any) {
+    document.getElementById(a)?.scrollIntoView();
+  }
   ngOnInit(): void {}
 }
