@@ -16,171 +16,167 @@ export class svgService {
     this.matIconRegistry.addSvgIcon(
       'hotu',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/hotu.svg`
+        `./assets/projects/icons/hotu.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'sisas',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/carena.svg`
+        `./assets/projects/icons/carena.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'chesterbot',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/chesterbot.svg`
+        `./assets/projects/icons/chesterbot.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'cyc',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/cyc.svg`
+        `./assets/projects/icons/cyc.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'flaptune',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/flaptune.svg`
+        `./assets/projects/icons/flaptune.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'portfolio',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/portfolio.svg`
+        `./assets/projects/icons/portfolio.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'eltacu',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/tacu.svg`
+        `./assets/projects/icons/tacu.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'todoit',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/icons/todoit.svg`
+        `./assets/projects/icons/todoit.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'demo',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/buttons/demo.svg`
+        `./assets/projects/buttons/demo.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'github',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/buttons/github.svg`
+        `./assets/projects/buttons/github.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'info',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/buttons/info.svg`
+        `./assets/projects/buttons/info.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'micv',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}footer/micv.svg`
+        `./assets/footer/micv.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'mail',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}footer/email.svg`
+        `./assets/footer/email.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'ghub',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}footer/github.svg`
+        `./assets/footer/github.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'linkedin',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}footer/linkedin.svg`
+        `./assets/footer/linkedin.svg`
       )
     );
     // LAN
     this.matIconRegistry.addSvgIcon(
       'angular',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/angular.svg`
+        `./assets/projects/languages/angular.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'ts',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/typescript.svg`
+        `./assets/projects/languages/typescript.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'bootstrap',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/bootstrap.svg`
+        `./assets/projects/languages/bootstrap.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'css',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/css.svg`
+        `./assets/projects/languages/css.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'gms',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/gms.svg`
+        `./assets/projects/languages/gms.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'html',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/html.svg`
+        `./assets/projects/languages/html.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'js',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/js.svg`
+        `./assets/projects/languages/js.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'node',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/node.svg`
+        `./assets/projects/languages/node.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'react',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/react.svg`
+        `./assets/projects/languages/react.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'sass',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/sass.svg`
+        `./assets/projects/languages/sass.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'vb',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}projects/languages/vb.svg`
+        `./assets/projects/languages/vb.svg`
       )
     );
     this.matIconRegistry.addSvgIcon(
       'arrow',
-      this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}arrow.svg`
-      )
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`./assets/arrow.svg`)
     );
     this.matIconRegistry.addSvgIcon(
       'mapache',
-      this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `${this.assets}mapache.svg`
-      )
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`./assets/mapache.svg`)
     );
   }
 }
