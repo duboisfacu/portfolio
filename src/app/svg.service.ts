@@ -111,6 +111,12 @@ export class svgService {
       )
     );
     this.matIconRegistry.addSvgIcon(
+      'ts',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(
+        `${this.assets}projects/languages/typescript.svg`
+      )
+    );
+    this.matIconRegistry.addSvgIcon(
       'bootstrap',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
         `${this.assets}projects/languages/bootstrap.svg`

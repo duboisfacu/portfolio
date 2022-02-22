@@ -142,9 +142,7 @@ export class ProjectsComponent implements OnInit {
         true,
         false,
         false,
-        [
-          '<p class="fw-bold">EN DESARROLLO</p>Sitio Web para complejo de cabañas',
-        ],
+        ['Sitio Web para complejo de cabañas (EN DESARROLLO)'],
         [this.languages.react],
       ],
       ['', '', false, false, false, false, false, true],

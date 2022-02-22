@@ -30,11 +30,7 @@
       </div>
     </div>
 
-    <a
-      data-aos="fade-down"
-      class="more fades"
-      *ngIf="more === 0"
-      (click)="operation(1)"
+    <a class="more fades" *ngIf="more === 0" (click)="operation(1)"
       >ver más proyectos</a
     >
     <div class="panel-mid" *ngIf="more === 1">
@@ -52,16 +48,7 @@
                 ></mat-icon>
               </div>
               <div class="buttons">
-                <a
-                  [swal]="{
-                    title: card[0].toString(),
-                    html: run(card),
-
-                    confirmButtonText: 'Cerrar'
-                  }"
-                  (click)="run(card)"
-                  *ngIf="card[2]"
-                >
+                <a mat-button (click)="openDialog(card)" *ngIf="card[2]">
                   <mat-icon
                     class="img color--primary"
                     svgIcon="info"
@@ -84,9 +71,7 @@
           </div>
         </ng-container>
 
-        <a data-aos="fade-down" class="more" (click)="operation(0)"
-          >ver menos proyectos</a
-        >
+        <a class="more fades" (click)="operation(0)">ver menos proyectos</a>
       </div>
     </div>
     <app-arrow [href]="'contact'"></app-arrow>
